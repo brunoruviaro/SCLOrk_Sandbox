@@ -1,6 +1,11 @@
+/////////////////
 // Peeling Apart
+/////////////////
 
-// SynthDef
+
+// BOOT SERVER (Ctrl + B)
+
+// Evaluate SynthDef
 (
 SynthDef("smoothreverb", {|freq = 440, mix = 0.33, room = 0.5, damp = 0.5, trig = 0, att = 0, sus = 1, rel = 0, coef = 0.1, amp = 0.1, pan = 0, outbus = 0|
 var env, snd;
@@ -18,7 +23,7 @@ Out.ar(0, Splay.ar(snd)*env);
 }).add;
 )
 
-// OSCdef
+// Evaluate OSCdef (to receive messages from conductor)
 (
 OSCdef(\test, { arg ...args;
 	Synth("smoothreverb", [
