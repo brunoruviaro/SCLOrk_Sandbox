@@ -131,6 +131,6 @@ s.waitForBoot({
 
 }); // end of waitForBoot
 
-"END OF CONGIT FILE".postln;
+"END OF CONFIG FILE".postln;
 "".postln;
 
