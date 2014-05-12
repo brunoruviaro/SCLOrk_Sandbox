@@ -7,6 +7,5 @@
 
 // Evaluate this single line and you are ready to go:
 
-"/home/lork/Music/SuperCollider/SCLOrk_Sandbox/Peeling_Apart_v2_CONFIG.scd".load;
-
+"Peeling_Apart_v2_CONFIG.scd".loadRelative;
 

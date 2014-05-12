@@ -95,7 +95,7 @@ s.waitForBoot({
 			delaytime: freq.reciprocal,
 			decaytime: noteDur,
 			coef: coef);
-		Out.ar(55, snd*env);
+		Out.ar(55, snd*env*0.5);
 	}).add;
 
 	// ***********
