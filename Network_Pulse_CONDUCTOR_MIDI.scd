@@ -24,7 +24,7 @@ MIDIdef.cc(\soloButtons, { arg value, ccNum;
 			~current = index;
 			["current", index, "bpm", ~bpm[index] ].postln;
 		},
-		{ "nothing to do" }
+		{ "nothing to do".postln }
 	);
 	},
 	ccNum: (32..39)
@@ -34,7 +34,7 @@ MIDIdef.cc(\soloButtons, { arg value, ccNum;
 MIDIdef.cc(\knobs, { arg value, ccNum;
 	var index = ccNum - 16;
 	~bpm[index] = value.linlin(0, 127, 30, 120).round(1);
-	~bpm[index].postln;
+	["index", index, "bpm", ~bpm[index] ].postln;
 	},
 	ccNum: (16..23)
 );

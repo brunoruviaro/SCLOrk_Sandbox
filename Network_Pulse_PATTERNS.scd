@@ -24,7 +24,7 @@
 // Variation 1
 
 ~patternArray[1] = Pchain(
-	Pbind(\dur, Pfunc({ 1 / (~bpm[0]/60) } / 4)),
+	Pbind(\dur, Pfunc({ 1 / (~bpm[1]/60) } / 4)),
 	~oscDuoRand, // 3. orchestrate
 	~mainPattern, // 2. create notes etc
 	~mainChords // 1. feed this first
@@ -34,7 +34,7 @@
 // Variation 2
 
 ~patternArray[2] = Pchain(
-	Pbind(\dur, Pfunc({ 1 / (~bpm[0]/60) } / 4)),
+	Pbind(\dur, Pfunc({ 1 / (~bpm[2]/60) } / 4)),
 	~oscBackAndForth,
 	~mainPattern,
 	~mainArpeggio
